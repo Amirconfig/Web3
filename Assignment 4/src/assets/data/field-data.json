@@ -1,0 +1,26 @@
+[
+    {
+        "firstName": "Amir",
+        "lastName": "H",
+        "address": "123 Maple Street",
+        "postalCode": "A1B 2C3",
+        "email": "khanmoam@sheridancollege.ca",
+        "phoneNumber": "555-1234"
+    },
+    {
+        "firstName": "Bruce",
+        "lastName": "Wayne",
+        "address": "234 Oak Avenue",
+        "postalCode": "B2C 3D4",
+        "email": "Batman@DCUniverse.com",
+        "phoneNumber": "555-5678"
+    },
+    {
+        "firstName": "James",
+        "lastName": "Sullivan",
+        "address": "345 Pine Road",
+        "postalCode": "C3D 4E5",
+        "email": "James.Sullivan@Monsters.inc",
+        "phoneNumber": "555-9012"
+    }
+]

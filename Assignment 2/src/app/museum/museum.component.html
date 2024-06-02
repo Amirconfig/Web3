@@ -1,0 +1,37 @@
+<table mat-table [dataSource]="museumData" class="mat-elevation-z8" [ngStyle]="{'background-color': 'lightblue'}">
+      
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef> Category </th>
+    <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="cultureDesc">
+    <th mat-header-cell *matHeaderCellDef> Culture </th>
+    <td mat-cell *matCellDef="let element"> {{element.cultureDesc}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="materialType">
+    <th mat-header-cell *matHeaderCellDef> Material Type </th>
+    <td mat-cell *matCellDef="let element"> {{element.materialType}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="objectName">
+    <th mat-header-cell *matHeaderCellDef> Object Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.objectName}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="section">
+    <th mat-header-cell *matHeaderCellDef> Section </th>
+    <td mat-cell *matCellDef="let element"> {{element.section}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns" style="background-color: rgb(130, 205, 230); font-weight: bold;"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>

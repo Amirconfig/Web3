@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(245, 220, 220);}
+
+header h2 {
+    color: #ffffff;
+    text-shadow: 3px 1.5px #3f0404;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(172, 71, 71, 0.847);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+    color: #ffffff;
+    text-shadow: 3px 1.5px #3f0404;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(172, 71, 71, 0.847);
+     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }

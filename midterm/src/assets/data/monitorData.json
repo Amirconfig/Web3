@@ -1,0 +1,33 @@
+[
+    {
+      "model": "U2718Q",
+      "brand": "Dell",
+      "resolution": 3840,
+      "size": 27,
+      "year": 2017,
+      "manufacturer": "Dell Inc.",
+      "unitsSold": 10000,
+      "inventory": 150
+    },
+    {
+      "model": "27UK850-W",
+      "brand": "LG",
+      "resolution": 3840,
+      "size": 27,
+      "year": 2018,
+      "manufacturer": "LG Electronics",
+      "unitsSold": 7500,
+      "inventory": 200
+    },
+    {
+      "model": "Predator XB273K",
+      "brand": "Acer",
+      "resolution": 3840,
+      "size": 27,
+      "year": 2019,
+      "manufacturer": "Acer Inc.",
+      "unitsSold": 5000,
+      "inventory": 80
+    }
+  ]
+  

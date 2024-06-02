@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-image: url('assets/images/glowing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header h2 {
+  color: #ffffff;
+  text-shadow: 2px 3px #3f0404;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(172, 71, 71, 0.363);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+  color: #ffffff;
+  text-shadow: 2px 3px #3f0404;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(172, 71, 71, 0.363);
+   padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}

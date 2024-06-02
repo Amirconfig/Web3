@@ -1,0 +1,16 @@
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:ops
+z,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<h2>Midterm | Amir Hosein Khanmohammadi | 991646689</h2>
+
+<mat-tab-group mat-stretch-tabs
+class="example-stretched-tabs mat-elevation-z4"
+[ngStyle]="{textAlign: 'center'}">
+<mat-tab label="monitor details">
+  <app-monitor-details [monitorData]="monitorDataArray"></app-monitor-details>
+</mat-tab>
+<mat-tab label="monitor stats">
+  <app-monitor-stats [monitorData]="monitorDataArray"></app-monitor-stats>
+</mat-tab>
+</mat-tab-group>

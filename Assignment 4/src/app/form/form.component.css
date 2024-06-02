@@ -1,0 +1,60 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1px;
+    column-gap: 20px;
+    max-width: 800px;
+    margin: auto; 
+    margin-top: 20px;
+}
+  
+.mat-form-field.address, 
+.mat-form-field.postalCode,
+.mat-form-field.email {
+    grid-column: 1 / -1;
+}
+  
+.mat-form-field {
+    display: block;
+    width: 100%;
+}
+  
+.mat-form-field input.mat-input-element,
+.mat-form-field textarea.mat-input-element {
+    font-size: 9px;
+    padding: 2px;
+}
+  
+.mat-form-field .mat-label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+  
+.mat-form-field .mat-error {
+    color: #d32f2f; 
+    font-size: 10px;
+    margin-top: 3px;
+}
+  
+button.submit-button {
+    grid-column: 1 / 3; 
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #793636; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button.submit-button:hover {
+    background-color: #7a4e4e;
+}
+  
+button.submit-button:disabled {
+    background-color: #c0c0c0;
+    color: #6c757d; 
+    cursor: not-allowed;
+}
+  

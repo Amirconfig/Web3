@@ -1,0 +1,14 @@
+<div class="list-container">
+    <mat-list>
+        <mat-list-item *ngFor="let x of fieldData">
+            <p>
+                <strong>Name:</strong> {{ x.firstName }} {{ x.lastName }} |
+                <strong>Address:</strong> {{ x.address }} |
+                <strong>PostalCode:</strong> {{ x.postalCode }} |
+                <strong>Email:</strong> {{ x.email }} |
+                <strong>Phone Number:</strong> {{ x.phoneNumber }}
+            </p>
+        </mat-list-item>
+    </mat-list>
+  </div>
+  

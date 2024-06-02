@@ -1,0 +1,16 @@
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:ops
+z,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<app-header [profile]="profileData"></app-header>
+
+<mat-tab-group mat-stretch-tabs
+class="example-stretched-tabs mat-elevation-z4">
+  <mat-tab label=Museum>
+    <app-museum [museumData]="museumData.MuseumData"></app-museum>
+  </mat-tab>
+  <mat-tab label="Paintings">
+    <app-paintings [paintingsData]="paintingsData.Paintings"></app-paintings>
+  </mat-tab>
+</mat-tab-group>
+
+<app-footer [profile]="profileData"></app-footer>

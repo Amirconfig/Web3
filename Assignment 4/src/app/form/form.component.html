@@ -1,0 +1,102 @@
+<form [formGroup]="fieldForm" (ngSubmit)="onSubmit()">
+
+    <!-- First Name Input -->
+    <mat-form-field appearance="fill" class="firstName">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName">
+      <ng-container *ngIf="fieldForm.get('firstName')!.touched">
+        <ng-container *ngIf="fieldForm.get('firstName')!.errors">
+          <ng-container *ngIf="fieldForm.get('firstName')!.errors?.['required']">
+            <mat-error>First name is required.</mat-error>
+          </ng-container>              
+          <ng-container *ngIf="fieldForm.get('firstName')!.errors?.['maxlength']">
+            <mat-error>First name cannot be more than 30 characters.</mat-error>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </mat-form-field>
+  
+    <!-- Last Name Input -->
+    <mat-form-field appearance="fill" class="lastName">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName">
+      <ng-container *ngIf="fieldForm.get('lastName')!.touched">
+        <ng-container *ngIf="fieldForm.get('lastName')!.errors">
+          <ng-container *ngIf="fieldForm.get('lastName')!.errors?.['required']">
+            <mat-error>Last name is required.</mat-error>
+          </ng-container>
+          <ng-container *ngIf="fieldForm.get('lastName')!.errors?.['maxlength']">
+            <mat-error>Last name cannot be more than 30 characters.</mat-error>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </mat-form-field>
+  
+    <!-- Address Input -->
+    <mat-form-field appearance="fill" class="address">
+      <mat-label>Address</mat-label>
+      <textarea matInput formControlName="address"></textarea>
+      <ng-container *ngIf="fieldForm.get('address')!.touched">
+        <ng-container *ngIf="fieldForm.get('address')!.errors">
+          <ng-container *ngIf="fieldForm.get('address')!.errors?.['required']">
+            <mat-error>Address is required.</mat-error>
+          </ng-container>
+          <ng-container *ngIf="fieldForm.get('address')!.errors?.['maxlength']">
+            <mat-error>Address cannot be more than 200 characters.</mat-error>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </mat-form-field>
+  
+<!-- Postal Code Input -->
+<mat-form-field appearance="fill" class="postalCode">
+    <mat-label>Postal Code</mat-label>
+    <input matInput formControlName="postalCode">
+    <ng-container *ngIf="fieldForm.get('postalCode')!.touched">
+      <ng-container *ngIf="fieldForm.get('postalCode')!.errors">
+        <ng-container *ngIf="fieldForm.get('postalCode')!.errors?.['required']">
+          <mat-error>Postal Code is required.</mat-error>
+        </ng-container>
+        <ng-container *ngIf="fieldForm.get('postalCode')!.errors?.['pattern']">
+          <mat-error>Invalid Canadian Postal Code format.</mat-error>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </mat-form-field>
+  
+  <!-- Email Input -->
+  <mat-form-field appearance="fill" class="email">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email">
+    <ng-container *ngIf="fieldForm.get('email')!.touched">
+      <ng-container *ngIf="fieldForm.get('email')!.errors">
+        <ng-container *ngIf="fieldForm.get('email')!.errors?.['required']">
+          <mat-error>Email is required.</mat-error>
+        </ng-container>
+        <ng-container *ngIf="fieldForm.get('email')!.errors?.['email']">
+          <mat-error>Invalid email address.</mat-error>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </mat-form-field>
+  
+  <!-- Phone Number Input -->
+  <mat-form-field appearance="fill" class="phoneNumber">
+    <mat-label>Phone Number</mat-label>
+    <input matInput formControlName="phoneNumber">
+    <ng-container *ngIf="fieldForm.get('phoneNumber')!.touched">
+      <ng-container *ngIf="fieldForm.get('phoneNumber')!.errors">
+        <ng-container *ngIf="fieldForm.get('phoneNumber')!.errors?.['maxlength']">
+          <mat-error>Phone number cannot be more than 15 characters.</mat-error>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </mat-form-field>
+  
+  <!-- Submit Button -->
+  <button mat-raised-button class="submit-button" type="submit" [disabled]="fieldForm.invalid" class="submit-button">
+    Submit
+  </button>
+
+</form>
+  

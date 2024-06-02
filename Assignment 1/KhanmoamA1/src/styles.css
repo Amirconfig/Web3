@@ -1,0 +1,14 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    background-image: url('assets/images/car.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+app-root {
+    position: relative;
+    z-index: 1;
+}

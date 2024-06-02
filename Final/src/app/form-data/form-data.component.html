@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>My Final Exam</mat-card-title>
+      <mat-card-subtitle>Khanmoam - khanmoam&#64;sheridancollege.ca</mat-card-subtitle>
+    </mat-card-header><br>
+  
+    <mat-card-content>
+      <form #formDataForm="ngForm" (ngSubmit)="onSubmit(formDataForm)">
+        <mat-form-field appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input matInput type="text" id="fName" name="fName" [(ngModel)]="finalData.fName" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input matInput type="text" id="lName" name="lName" [(ngModel)]="finalData.lName" required>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit" [disabled]="!formDataForm.valid">Submit</button>
+      </form>
+    </mat-card-content>
+</mat-card>
+  

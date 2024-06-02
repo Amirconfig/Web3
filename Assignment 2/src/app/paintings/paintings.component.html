@@ -1,0 +1,35 @@
+<section>
+  <mat-list [ngStyle]="{'background-color': 'pink'}">
+    <mat-list-item *ngFor="let painting of paintingsData" class="painting-item">
+      <p [ngStyle]="{'font-size': '13px'}">
+        <strong>Title:</strong> {{ painting.title }} | 
+        <strong>Painter:</strong> {{ painting.painter }} | 
+        <strong>Year:</strong> {{ painting.year }} | 
+        <strong>Cultural Origin:</strong> {{ painting.culturalOrigin }}
+      </p>
+    </mat-list-item>
+  </mat-list>
+</section>
+<br>
+
+<!-- note comment: I JUST CREAT A TABLE WITH *ngFor JUST TO SHOWING you I CAN MAKE IT (also for my github) -->
+<section>
+  <table mat-table [dataSource]="paintingsData" class="mat-elevation-z8" [ngStyle]="{'background-color': 'pink'}">
+
+    <ng-container *ngFor="let column of tableColumns" [matColumnDef]="column.id">
+      <th mat-header-cell *matHeaderCellDef> {{ column.label }} </th>
+      <td mat-cell *matCellDef="let element"> {{ element[column.property] }} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" style="background-color: rgb(250, 154, 170); font-weight: bold;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+</section>
+
+
+
+
+
+
+

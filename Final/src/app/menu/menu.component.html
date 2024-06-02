@@ -1,0 +1,15 @@
+<mat-toolbar color="Grey">
+    <span>Login: {{ loginName }}</span>
+    <span class="spacer"></span>
+    <span>Date: {{ today | date }}</span>
+</mat-toolbar>
+  
+
+<mat-list>
+    <mat-list-item *ngIf="finalData">First Name: {{ finalData.fName }}</mat-list-item>
+    <mat-list-item *ngIf="finalData">Last Name: {{ finalData.lName }}</mat-list-item>
+</mat-list>
+  
+<button mat-raised-button color="accent" (click)="getFinalData()">Retrieve Data</button>
+<button mat-raised-button color="warn" (click)="navigateToFormData()" *ngIf="finalData">Go to Form Data</button>
+

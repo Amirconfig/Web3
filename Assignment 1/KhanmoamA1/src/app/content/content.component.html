@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="sectionA">
+      <ul>
+        <li *ngFor="let car of cars" (click)="onSelect(car)">
+          {{ car.model }}
+        </li>
+      </ul>
+    </div>
+    <div class="sectionB">
+      <div *ngIf="selectedCar">
+        <h3>Details for {{ selectedCar.model }}:</h3>
+        <p><strong>Make: </strong>{{ selectedCar.make }}</p>
+        <p><strong>Model: </strong>{{ selectedCar.model }}</p>
+        <p><strong>Body Type: </strong>{{ selectedCar.bodyType }}</p>
+        <p><strong>Color: </strong>{{ selectedCar.color }}</p>
+      </div>
+    </div>
+  </div>
+  

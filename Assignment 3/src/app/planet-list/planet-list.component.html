@@ -1,0 +1,6 @@
+<h3>Solar System Planets</h3>
+<mat-list role="list">
+  <mat-list-item *ngFor="let planet of planets" (click)="onSelect(planet)" role="listitem">
+    <p>- {{ planet.planetName }} -</p>
+  </mat-list-item>
+</mat-list>

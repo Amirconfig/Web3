@@ -1,0 +1,64 @@
+{
+	"Paintings": [ 
+	{
+		"title" : "Mona Lisa",
+		"painter" : "Leonardo Da Vinci",
+		"year" : 1503,
+		"culturalOrigin": "Italian"
+	},
+	{
+		"title" : "Girl with a Pearl Earring",
+		"painter" : "Johannes Vermeer",
+		"year" : 1665,
+		"culturalOrigin": "Dutch"
+	},
+	{
+		"title" : "The Starry Night",
+		"painter" : "Vincent van Gogh",
+		"year" : 1889,
+		"culturalOrigin": "Dutch"
+	},
+	{
+		"title" : "The Kiss",
+		"painter" : "Gustav Klimt",
+		"year" : 1907,
+		"culturalOrigin": "Austrian"
+	},
+	{
+		"title" : "The Birth of Venus",
+		"painter" : "Sandro Botticelli",
+		"year" : 1484,
+		"culturalOrigin": "Italian"
+	},
+	{
+		"title" : "Arrangement in Grey and Black No. 1",
+		"painter" : "James Abbott McNeill Whistler",
+		"year" : 1871,
+		"culturalOrigin": "American"
+	},
+	{
+		"title" : "The Arnolfini Portrait",
+		"painter" : "Jan van Eyck",
+		"year" : 1434,
+		"culturalOrigin": "Netherland"
+	},
+	{
+		"title" : "The Garden of Earthly Delights",
+		"painter" : "Hieronymus Bosch",
+		"year" : 1503,
+		"culturalOrigin": "Netherland"
+	},
+	{
+		"title" : "A Sunday Afternoon on the Island of La Grande Jatte",
+		"painter" : "Georges Seurat",
+		"year" : 1884,
+		"culturalOrigin": "French"
+	},
+	{
+		"title" : "Les Demoiselles d'Avignon",
+		"painter" : "Pablo Picasso",
+		"year" : 1907,
+		"culturalOrigin": "Spain"
+	}
+	]
+}

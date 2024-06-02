@@ -1,0 +1,17 @@
+  <mat-card *ngIf="planet">
+    <mat-card-header>
+      <mat-card-title>{{ planet.planetName }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/images/{{ planet.image }}" alt="{{ planet.planetName }}">
+    <mat-card-content>
+      <p>Color: {{ planet.planetColor }}</p>
+      <p>Radius: {{ planet.planetRadiusKM }} KM</p>
+      <p>Distance from Sun: {{ planet.distInMillionsKM.fromSun }} million KM</p>
+      <p>Distance from Earth: {{ planet.distInMillionsKM.fromEarth }} million KM</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="goBack()">Back to List</button>
+    </mat-card-actions>
+  </mat-card>
+
+  
